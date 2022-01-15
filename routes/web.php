@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('/addbook', [Book::class,'addBook']);
 Route::post('/addbook', [Book::class,'createBook'])->name('book.create');
 Route::get('/books', [Book::class,'getBook']);
+Route::get('/books/{id}', [Book::class,'getBookById']);

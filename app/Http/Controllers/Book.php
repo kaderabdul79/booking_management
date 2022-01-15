@@ -26,4 +26,9 @@ class Book extends Controller
         return view('all-books',compact('books'));
     }
 
+    public function getBookById($id){
+        $book = Books::where('id',$id)->first();
+        return view('single-book',compact('book'));
+    }
+
 }
