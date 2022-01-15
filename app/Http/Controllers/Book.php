@@ -20,4 +20,10 @@ class Book extends Controller
         $book->save();
         return back()->with('bookadded','new book inserted successfully');
     }
+
+    public function getBook(){
+        $books = Books::get();
+        return view('all-books',compact('books'));
+    }
+
 }
