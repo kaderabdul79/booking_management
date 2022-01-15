@@ -9,7 +9,35 @@
 
 </head>
 <body>
-    <h2>addbook</h2>
+    
+    <div class="addbookform">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                    <div class="card">
+                        <div class="card-header">Add Book</div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                            <div class="mb-3">
+                            <input class="form-control" type="text" name="name" placeholder="Book Name">
+                            </div>
+                            <div class="mb-3">
+                            <input class="form-control" type="text" name="author" placeholder="Author">
+                            </div>
+                            <div class="mb-3">
+                            <textarea class="form-control" name="description" placeholder="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            
+                            <input type="submit" name="addbook" value="Add Book">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
