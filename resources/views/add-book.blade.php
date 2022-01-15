@@ -14,9 +14,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <form>
+                    <form method="POST"> 
+                        @csrf
                     <div class="card">
                         <div class="card-header">Add Book</div>
+                        @if(Session::has('bookadded'))
+                        <div>
+                            <div class="alert alert-success" role="alert">
+                                {{Session::get('bookadded')}}
+                            </div>
+                        </div>
+                        @endif
                         <div class="card-body">
                             <div class="mb-3">
                             <div class="mb-3">
